@@ -73,8 +73,6 @@ Congratulations! You have set up everything and you can finally have the bot up 
 python3 launcher.py
 ```
 
-Alternatively, you may also run `main.py` directly for a single cluster.
-
 ## Code of Conduct
 
 This project is governed by [Contributor Covenant Code of Conduct](https://github.com/chamburr/modmail/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.

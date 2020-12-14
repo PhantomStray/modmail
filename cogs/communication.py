@@ -300,7 +300,7 @@ class Communication(commands.Cog):
         await self.bot.redis.execute("PUBLISH", self.ipc_channel, json.dumps(payload))
         try:
             async with timeout(_timeout):
-                while len(self._messages[command_id]) < expected_count:
+                while len(self._messages[command_id]) < abs(expected_count):
                     await asyncio.sleep(0.1)
         except asyncio.TimeoutError:
             pass
@@ -315,7 +315,7 @@ class Communication(commands.Cog):
                 new_msg.append(DictToObj(**entry))
             else:
                 new_msg.append(entry)
-        if expected_count == 1:
+        if expected_count == -1:
             if len(new_msg) == 0:
                 return None
             else:

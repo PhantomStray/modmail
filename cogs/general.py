@@ -177,6 +177,16 @@ class General(commands.Cog):
         )
         all_pages.append(page)
         page = discord.Embed(
+            title="Call of Duty Mobile",
+            description="The Activision-supported, community-run discord for the Call of Duty: Mobile Community.",
+            colour=self.bot.primary_colour,
+        )
+        page.add_field(name="Link", value="https://discord.gg/codmobile")
+        page.set_thumbnail(
+            url="https://cdn.discordapp.com/icons/619762818266431547/a_cce3e6b3b6e64dcf7bbb6fa92c9fc4e6.gif"
+        )
+        all_pages.append(page)
+        page = discord.Embed(
             title="Car Crushers Official Discord",
             description="Official Discord server for the Roblox game, Car Crushers 2. Where you can have both on and "
             "off topic discussions about the game or anything in general with our community of active and friendly "
@@ -185,7 +195,7 @@ class General(commands.Cog):
         )
         page.add_field(name="Link", value="https://discord.gg/CUkKzGr")
         page.set_thumbnail(
-            url="https://cdn.discordapp.com/icons/242263977986359297/a_b45b86e21caa5edb1406a761a9efe3d5.gif"
+            url="https://cdn.discordapp.com/icons/242263977986359297/a_ff1c6cf6b1b68cfe94d04cb1936e2602.gif"
         )
         all_pages.append(page)
         page = discord.Embed(
